@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbsv0vkdudjys"]
+
+[ext_resource type="Script" uid="uid://ph2yxbe6rqh" path="res://Scenes/nucleotides_molecules.gd" id="1_fylha"]
+
+[node name="nucleotides_molecules" type="Control"]
+layout_mode = 3
+anchor_top = 0.611
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -411.08
+offset_right = 1680.0
+offset_bottom = 461.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_fylha")
+metadata/_edit_use_anchors_ = true

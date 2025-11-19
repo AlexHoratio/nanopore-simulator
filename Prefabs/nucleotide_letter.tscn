@@ -1,0 +1,81 @@
+[gd_scene load_steps=9 format=3 uid="uid://boy1pxa0pdo2r"]
+
+[ext_resource type="Script" uid="uid://camcw8qqj557c" path="res://Prefabs/nucleotide.gd" id="1_qpjum"]
+[ext_resource type="Texture2D" uid="uid://b4idah8qsuc70" path="res://Graphics/backbone.png" id="2_tggbo"]
+[ext_resource type="Texture2D" uid="uid://cvdmuxn71d0ns" path="res://Graphics/adenine.png" id="3_asyd2"]
+[ext_resource type="Texture2D" uid="uid://duvp53gh5eo2l" path="res://Graphics/cytosine.png" id="4_73gc4"]
+[ext_resource type="Texture2D" uid="uid://gpttsxlumgh3" path="res://Graphics/guanine.png" id="5_ujjq8"]
+[ext_resource type="Texture2D" uid="uid://2wrixv5521kh" path="res://Graphics/thymine.png" id="6_n5qjd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mxxph"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_asyd2")
+}],
+"loop": true,
+"name": &"A",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_73gc4")
+}],
+"loop": true,
+"name": &"C",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ujjq8")
+}],
+"loop": true,
+"name": &"G",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_n5qjd")
+}],
+"loop": true,
+"name": &"T",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"X",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qpjum"]
+font_size = 200
+outline_size = 50
+outline_color = Color(0, 0, 0, 1)
+
+[node name="nucleotide_letter" type="Node2D"]
+script = ExtResource("1_qpjum")
+
+[node name="sugarphosphate" type="TextureRect" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_tggbo")
+
+[node name="base" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(296, 617)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_mxxph")
+animation = &"T"
+
+[node name="letter" type="Label" parent="."]
+offset_left = -248.0
+offset_top = -136.0
+offset_right = 250.0
+offset_bottom = 137.0
+text = "A"
+label_settings = SubResource("LabelSettings_qpjum")
+horizontal_alignment = 1

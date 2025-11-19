@@ -8,10 +8,12 @@ func _process(delta):
 
 func nucleotide_entered(base) -> void:
 	#get_node("../stats").base_entered(base)
-	if base == get_node("../nucleotides").current_base:
-		get_node("../nucleotides").next_nucleotide()
-	else:
-		get_node("../nucleotides").previous_nucleotide()
+	get_node("../nucleotides").enter_nucleotide(base)
+	
+	#if base == get_node("../nucleotides").current_base:
+		#get_node("../nucleotides").next_nucleotide()
+	#else:
+		#get_node("../nucleotides").previous_nucleotide()
 
 func _on_a_pressed():
 	nucleotide_entered("A")

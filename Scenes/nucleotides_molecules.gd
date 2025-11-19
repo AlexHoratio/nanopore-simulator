@@ -14,16 +14,16 @@ var base_px_offsets = { # backbone/current
 	"G": Vector2(1125, 687),
 }
 
-var current_base = null
+var current_base = "X"
 var speed_sequence = 0
 var speed_sequence_rate = 0
 var speed_sequence_timer = 0
 
-var nuc_range = 14
-var nuc_spacing = 160
+var nuc_range = 15
 
 func _ready():
-	spawn_starting_nucleotides()
+	pass
+	#spawn_starting_nucleotides()
 	
 func _process(delta):
 	#if get_children().size() < 5:
@@ -40,19 +40,19 @@ func _process(delta):
 			speed_sequence -= 1
 			next_nucleotide()
 			
-	current_base = get_child(floor(nuc_range/2.0))
+	current_base = get_child(floor(nuc_range/2.0)).nucleotide_type
 	
 	if get_child_count() > nuc_range:
 		get_child(0).queue_free()
 	
 func organize_nucleotides(delta: float) -> void:
-	#position.x = get_viewport_rect().size.x/2.0
+	position.x = 50 + get_viewport_rect().size.x/2.0
 	
 	for nucleotide in get_children():
-		var x = get_viewport_rect().size.x/2.0 + nucleotide.get_index()*nuc_spacing - get_child_count()*(nuc_spacing/2.0) 
-		nucleotide.position = lerp(nucleotide.position, Vector2(x, 140), 10*delta)
+		var x = -(get_child_count())*(811.0/2.0) + nucleotide.get_index()*811.0
+		nucleotide.position = lerp(nucleotide.position, Vector2(x, 60), 10*delta)
 			
-		nucleotide.modulate.a = lerp(nucleotide.modulate.a, 0.7 if nucleotide != current_base else 1.0, 0.2)
+		nucleotide.modulate.a = lerp(nucleotide.modulate.a, 0.2 if nucleotide.get_index() < 2 else 1.0, 10*delta)
 		
 func next_nucleotide() -> void:
 	get_child(0).queue_free()
@@ -70,13 +70,13 @@ func previous_nucleotide() -> void:
 	Genome.save_progress()
 	
 func spawn_new_nucleotide() -> void:
-	var nucleotide = load("res://Prefabs/nucleotide_letter.tscn").instantiate()
+	var nucleotide = load("res://Prefabs/nucleotide.tscn").instantiate()
 	nucleotide.position = Vector2(get_viewport_rect().size.x/(scale.x) + 4*811, 60)
 	nucleotide.nucleotide_type = Genome.pop_next_base()
 	add_child(nucleotide)
 	
 func spawn_last_nucleotide() -> void:
-	var nucleotide = load("res://Prefabs/nucleotide_letter.tscn").instantiate()
+	var nucleotide = load("res://Prefabs/nucleotide.tscn").instantiate()
 	nucleotide.position = Vector2(get_viewport_rect().size.x/(scale.x) - 4*811, 60)
 	nucleotide.nucleotide_type = Genome.genome_data[max(0, Genome.current_place - nuc_range)]
 	add_child(nucleotide)
@@ -84,17 +84,7 @@ func spawn_last_nucleotide() -> void:
 	
 func spawn_starting_nucleotides() -> void:
 	for i in range(nuc_range):
-		var nucleotide = load("res://Prefabs/nucleotide_letter.tscn").instantiate()
+		var nucleotide = load("res://Prefabs/nucleotide.tscn").instantiate()
 		nucleotide.position = Vector2(DisplayServer.window_get_size().x/(scale.x) + 4*811, 60)
 		nucleotide.nucleotide_type = Genome.genome_data[max(0, Genome.current_place - (nuc_range - i))]
 		add_child(nucleotide)
-
-func enter_nucleotide(base: String) -> void:
-	if base == current_base.nucleotide_type:
-		current_base.modulate = Color.GREEN
-		Input.vibrate_handheld(50)
-	else:
-		current_base.modulate = Color.RED
-		Input.vibrate_handheld(200)
-		
-	next_nucleotide()

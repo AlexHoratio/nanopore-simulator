@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 @export var nucleotide_type = "X"
 
@@ -17,5 +17,7 @@ func _process(delta):
 	pass
 
 func set_base(letter) -> void:
+	$letter.text = nucleotide_type
+	
 	$base.play(letter)
 	$base.position = base_px_offsets[letter]
