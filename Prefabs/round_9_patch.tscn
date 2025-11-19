@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyc1hsfx01ivf"]
+
+[ext_resource type="Texture2D" uid="uid://bl1uqsvsrgsv1" path="res://Graphics/round_9patch.png" id="1_cwxpn"]
+
+[node name="round_9_patch" type="NinePatchRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -656.0
+offset_bottom = -1216.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_cwxpn")
+patch_margin_left = 32
+patch_margin_top = 32
+patch_margin_right = 32
+patch_margin_bottom = 32

@@ -26,6 +26,7 @@ func _ready():
 	spawn_starting_nucleotides()
 	
 func _process(delta):
+	#enter_nucleotide(current_base.nucleotide_type)
 	#if get_children().size() < 5:
 		#var nucleotide = load("res://Prefabs/nucleotide.tscn").instantiate()
 		#nucleotide.position = Vector2(747, 60)
@@ -86,13 +87,20 @@ func spawn_starting_nucleotides() -> void:
 	for i in range(nuc_range):
 		var nucleotide = load("res://Prefabs/nucleotide_letter.tscn").instantiate()
 		nucleotide.position = Vector2(DisplayServer.window_get_size().x/(scale.x) + 4*811, 60)
-		nucleotide.nucleotide_type = Genome.genome_data[max(0, Genome.current_place - (nuc_range - i))]
+		nucleotide.nucleotide_type = Genome.genome_data[max(0, (int(Genome.current_place) % 8000) - (nuc_range - i))]
 		add_child(nucleotide)
 
 func enter_nucleotide(base: String) -> void:
 	if base == current_base.nucleotide_type:
 		current_base.modulate = Color.GREEN
 		Input.vibrate_handheld(50)
+		
+		var explosion_effect = load("res://Prefabs/explosion.tscn").instantiate()
+		explosion_effect.global_position = current_base.global_position + Vector2(randf()*200, 0).rotated(2*randf()*PI)
+		explosion_effect.base = current_base.nucleotide_type
+		get_node("../fx").add_child(explosion_effect)
+		
+		
 	else:
 		current_base.modulate = Color.RED
 		Input.vibrate_handheld(200)

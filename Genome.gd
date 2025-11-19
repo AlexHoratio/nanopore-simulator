@@ -21,20 +21,20 @@ func _ready():
 	calculate_annotation()
 	
 func _process(delta):
-	pass
+	print(current_place)
 	
 func load_progress() -> void:
-	load_genome_file()
-	
 	save_data.load("user://save_data.cfg")
 	current_place = save_data.get_value("Progress", "current_place", 0)
+	load_genome_file()
+	
 	
 func save_progress() -> void:
 	save_data.set_value("Progress", "current_place", current_place)
 	save_data.save("user://save_data.cfg")
 	
 func load_genome_file() -> void:
-	var base_minimum = floor(current_place/80.0)*100
+	var base_minimum = floor(current_place/8000.0)*100
 	var file = FileAccess.open("res://Resources/ecoli/" + str(int(base_minimum)) + "_" + str(int(base_minimum) + 100) + ".txt", FileAccess.READ)
 	genome_data = file.get_as_text()
 
@@ -58,12 +58,13 @@ func calculate_annotation() -> void:
 func pop_next_base() -> String:
 	var next_base = "X"
 	
-	next_base = genome_data[current_place - (floor(current_place/80.0)*100)]
+	next_base = genome_data[current_place - floor(current_place/8000)*8000]
 	#genome_data = genome_data.erase(0)
 	
 	current_place += 1
 	
-	if current_place >= (floor(current_place/80.0)*100) + 800:
+	#if current_place >= (floor(current_place/80.0)*100) + 800:
+	if current_place % 8000 == 0:
 		load_genome_file()
 	
 	calculate_annotation()

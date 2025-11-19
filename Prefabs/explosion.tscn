@@ -1,0 +1,88 @@
+[gd_scene load_steps=10 format=3 uid="uid://chlv3py1088wa"]
+
+[ext_resource type="Texture2D" uid="uid://2wrixv5521kh" path="res://Graphics/thymine.png" id="1_nfi1t"]
+
+[sub_resource type="GDScript" id="GDScript_nfi1t"]
+script/source = "extends Node2D
+
+var base = \"X\"
+
+func _ready():
+	match base:
+		\"X\":
+			pass
+		\"A\":
+			$GPUParticles2D.texture = load(\"res://Graphics/adenine.png\")
+		\"T\":
+			$GPUParticles2D.texture = load(\"res://Graphics/thymine.png\")
+		\"C\":
+			$GPUParticles2D.texture = load(\"res://Graphics/cytosine.png\")
+		\"G\":
+			$GPUParticles2D.texture = load(\"res://Graphics/guanine.png\")
+		_:
+			pass
+	
+	$GPUParticles2D.emitting = true
+
+func _on_gpu_particles_2d_finished():
+	queue_free()
+"
+
+[sub_resource type="Gradient" id="Gradient_g0hho"]
+offsets = PackedFloat32Array(0, 0.005050505, 0.12626262, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.2335025, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_eplxj"]
+gradient = SubResource("Gradient_g0hho")
+
+[sub_resource type="Curve" id="Curve_82iyt"]
+_limits = [-1.0, 1.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, -1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_v0raf"]
+curve = SubResource("Curve_82iyt")
+
+[sub_resource type="Curve" id="Curve_t3h84"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.64285713, 0.8876405), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_31rmq"]
+curve = SubResource("Curve_t3h84")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kmffy"]
+particle_flag_disable_z = true
+angle_min = -720.0
+angle_max = 720.0
+spread = 180.0
+initial_velocity_min = 150.0
+initial_velocity_max = 500.0
+angular_velocity_min = -720.0
+angular_velocity_max = 719.99994
+gravity = Vector3(0, 0, 0)
+radial_accel_min = -10000.0
+radial_accel_max = -10000.0
+tangential_accel_min = -1000.0
+tangential_accel_max = 1000.0
+scale_min = 0.19999999
+scale_max = 0.5
+scale_curve = SubResource("CurveTexture_31rmq")
+color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+color_ramp = SubResource("GradientTexture1D_eplxj")
+hue_variation_min = -1.0
+hue_variation_max = 0.99999994
+hue_variation_curve = SubResource("CurveTexture_v0raf")
+
+[node name="explosion" type="Node2D"]
+script = SubResource("GDScript_nfi1t")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+emitting = false
+amount = 1
+texture = ExtResource("1_nfi1t")
+one_shot = true
+explosiveness = 0.9
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_kmffy")
+
+[connection signal="finished" from="GPUParticles2D" to="." method="_on_gpu_particles_2d_finished"]
