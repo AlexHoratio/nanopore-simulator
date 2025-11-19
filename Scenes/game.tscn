@@ -1,0 +1,188 @@
+[gd_scene load_steps=13 format=3 uid="uid://c73obvjk3onam"]
+
+[ext_resource type="Script" path="res://Scenes/game.gd" id="1_ww4x5"]
+[ext_resource type="Texture2D" uid="uid://b4idah8qsuc70" path="res://Graphics/backbone.png" id="2_jkrsi"]
+[ext_resource type="Script" path="res://Scenes/nucleotides_etc.gd" id="2_ptgwx"]
+[ext_resource type="Script" path="res://Scenes/buttons.gd" id="4_0x740"]
+[ext_resource type="Texture2D" uid="uid://duvp53gh5eo2l" path="res://Graphics/cytosine.png" id="4_7um6p"]
+[ext_resource type="Texture2D" uid="uid://cvdmuxn71d0ns" path="res://Graphics/adenine.png" id="5_5xf8g"]
+[ext_resource type="Script" path="res://Scenes/stats.gd" id="6_hhtpn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g60rq"]
+font_size = 32
+
+[sub_resource type="Animation" id="Animation_6g1wn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("backbone:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-465, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4cdqw"]
+resource_name = "next_nucleotide"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("backbone:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.133972, 1),
+"update": 0,
+"values": [Vector2(-465, 0), Vector2(-1073, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_feblm"]
+_data = {
+"RESET": SubResource("Animation_6g1wn"),
+"next_nucleotide": SubResource("Animation_4cdqw")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_tagg2"]
+font_size = 32
+
+[node name="game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ww4x5")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = -26.0
+offset_top = 269.0
+offset_right = 782.0
+offset_bottom = 458.0
+text = "sfgfsg"
+label_settings = SubResource("LabelSettings_g60rq")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="nucleotides" type="Control" parent="."]
+layout_mode = 1
+anchor_top = 0.0179687
+anchor_right = 1.0
+anchor_bottom = 0.417969
+grow_horizontal = 2
+script = ExtResource("2_ptgwx")
+metadata/_edit_use_anchors_ = true
+
+[node name="backbone" type="TextureRect" parent="nucleotides"]
+layout_mode = 0
+offset_left = -465.0
+offset_right = 2779.0
+offset_bottom = 411.0
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_jkrsi")
+stretch_mode = 1
+
+[node name="current" type="Sprite2D" parent="nucleotides/backbone"]
+position = Vector2(1104, 553.333)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4_7um6p")
+
+[node name="next" type="Sprite2D" parent="nucleotides/backbone"]
+position = Vector2(1849.33, 636)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("5_5xf8g")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="nucleotides"]
+libraries = {
+"": SubResource("AnimationLibrary_feblm")
+}
+speed_scale = 4.0
+
+[node name="stats" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.504687
+anchor_right = 1.0
+anchor_bottom = 0.599219
+grow_horizontal = 2
+script = ExtResource("6_hhtpn")
+metadata/_edit_use_anchors_ = true
+
+[node name="bases_per_second" type="Label" parent="stats"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 14.0
+offset_right = 703.0
+offset_bottom = 59.0
+text = "Bases per second:"
+label_settings = SubResource("LabelSettings_tagg2")
+
+[node name="longest_read" type="Label" parent="stats"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 62.0
+offset_right = 698.0
+offset_bottom = 107.0
+text = "Best read:"
+label_settings = SubResource("LabelSettings_tagg2")
+
+[node name="buttons" type="Control" parent="."]
+layout_mode = 1
+anchor_top = 0.603125
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("4_0x740")
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="buttons"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="a" type="Button" parent="buttons/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 128
+text = "A"
+
+[node name="t" type="Button" parent="buttons/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 128
+text = "T"
+
+[node name="c" type="Button" parent="buttons/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 128
+text = "C"
+
+[node name="g" type="Button" parent="buttons/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 128
+text = "G"
+
+[connection signal="animation_finished" from="nucleotides/AnimationPlayer" to="nucleotides" method="_on_animation_player_animation_finished"]
+[connection signal="pressed" from="buttons/GridContainer/a" to="buttons" method="_on_a_pressed"]
+[connection signal="pressed" from="buttons/GridContainer/t" to="buttons" method="_on_t_pressed"]
+[connection signal="pressed" from="buttons/GridContainer/c" to="buttons" method="_on_c_pressed"]
+[connection signal="pressed" from="buttons/GridContainer/g" to="buttons" method="_on_g_pressed"]

@@ -1,0 +1,180 @@
+[gd_scene load_steps=7 format=3 uid="uid://cr61c0cfr32mm"]
+
+[ext_resource type="Script" uid="uid://dwfm8krm03a2b" path="res://Scenes/nucleotides.gd" id="1_u0m5t"]
+[ext_resource type="Script" uid="uid://vuf8raj15uxv" path="res://Scenes/buttons.gd" id="2_c065l"]
+[ext_resource type="Script" uid="uid://v73wk0yg11kc" path="res://Scenes/gene_annotation.gd" id="3_e7j1d"]
+[ext_resource type="Script" uid="uid://dqboln7c00bnu" path="res://Scenes/stars.gd" id="4_ilgaw"]
+[ext_resource type="Texture2D" uid="uid://bdfgnvmtb31nt" path="res://Graphics/transparentLight31.png" id="5_udh7g"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uwjfp"]
+font_size = 32
+outline_size = 16
+outline_color = Color(0, 0, 0, 1)
+
+[node name="new_game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="nucleotides" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchor_top = 0.611
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -411.08
+offset_right = 1680.0
+offset_bottom = 461.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_u0m5t")
+metadata/_edit_use_anchors_ = true
+
+[node name="buttons" type="Control" parent="."]
+layout_mode = 1
+anchor_top = 0.603125
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("2_c065l")
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="buttons"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="a" type="Button" parent="buttons/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 128
+text = "A"
+
+[node name="t" type="Button" parent="buttons/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 128
+text = "T"
+
+[node name="c" type="Button" parent="buttons/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 128
+text = "C"
+
+[node name="g" type="Button" parent="buttons/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 128
+text = "G"
+
+[node name="gene_annotation" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.605
+offset_bottom = -448.4
+grow_horizontal = 2
+script = ExtResource("3_e7j1d")
+metadata/_edit_use_anchors_ = true
+
+[node name="name" type="Label" parent="gene_annotation"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "thr operon leader peptide (thrL)"
+label_settings = SubResource("LabelSettings_uwjfp")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="current" type="Label" parent="gene_annotation"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.039
+anchor_top = 1.0
+anchor_right = 0.505556
+anchor_bottom = 1.0
+offset_left = -0.079998
+offset_top = -97.0
+offset_bottom = -52.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Current: 194"
+metadata/_edit_use_anchors_ = true
+
+[node name="next" type="Label" parent="gene_annotation"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.515278
+anchor_top = 1.0
+anchor_right = 0.962
+anchor_bottom = 3.932
+offset_top = -97.0
+offset_right = 0.359924
+offset_bottom = -1007.83
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Next: 255"
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="progress" type="ProgressBar" parent="gene_annotation"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -27.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+
+[node name="stars" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+script = ExtResource("4_ilgaw")
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+offset_right = 127.0
+offset_bottom = 130.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(69, 71)
+scale = Vector2(2, 2)
+texture = ExtResource("5_udh7g")
+
+[connection signal="pressed" from="buttons/GridContainer/a" to="buttons" method="_on_a_pressed"]
+[connection signal="pressed" from="buttons/GridContainer/t" to="buttons" method="_on_t_pressed"]
+[connection signal="pressed" from="buttons/GridContainer/c" to="buttons" method="_on_c_pressed"]
+[connection signal="pressed" from="buttons/GridContainer/g" to="buttons" method="_on_g_pressed"]

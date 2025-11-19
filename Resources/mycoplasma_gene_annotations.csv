@@ -1,0 +1,569 @@
+Begin	End	Name	Symbol	Gene Type
+686	1828	DNA polymerase III subunit beta	dnaN	protein-coding
+1828	2760	J domain-containing protein		protein-coding
+2845	4797	DNA topoisomerase (ATP-hydrolyzing) subunit B	gyrB	protein-coding
+4812	7322	DNA topoisomerase (ATP-hydrolyzing) subunit A	gyrA	protein-coding
+7294	8547	serine--tRNA ligase	serS	protein-coding
+8551	9183	dTMP kinase	tmk	protein-coding
+9156	9920	DNA polymerase III subunit delta'		protein-coding
+9923	11251	tRNA uridine-5-carboxymethylaminomethyl(34) synthesis GTPase MnmE	mnmE	protein-coding
+11251	12039	TatD family hydrolase		protein-coding
+12068	12724	DNA primase-like protein		protein-coding
+12701	13564	RimK family alpha-L-glutamate ligase		protein-coding
+13569	14432	RimK family alpha-L-glutamate ligase		protein-coding
+14395	15216	bifunctional 5,10-methylenetetrahydrofolate dehydrogenase/5,10-methenyltetrahydrofolate cyclohydrolase		protein-coding
+15294	15369	tRNA-Ala		tRNA
+15375	15451	tRNA-Ile		tRNA
+15555	17426	ABC transporter ATP-binding protein		protein-coding
+17473	19242	ABC transporter ATP-binding protein		protein-coding
+19252	22347	DEAD/DEAH box helicase		protein-coding
+22389	23558	molecular chaperone DnaJ	dnaJ	protein-coding
+23542	24468	prolyl aminopeptidase	pip	protein-coding
+24468	26006	methionine--tRNA ligase	metG	protein-coding
+26036	26473	DNA-directed RNA polymerase subunit delta	rpoE	protein-coding
+26479	27345	class II fructose-1,6-bisphosphate aldolase	fba	protein-coding
+27346	28449	redox-regulated ATPase YchF	ychF	protein-coding
+28652	29548	glycosyltransferase family 2 protein		protein-coding
+29552	30124	elongation factor P	efp	protein-coding
+30093	30548	DUF1948 domain-containing protein		protein-coding
+30548	31153	DUF5453 family protein		protein-coding
+31143	31703	DJ-1/PfpI family protein		protein-coding
+31705	32325	uracil phosphoribosyltransferase	upp	protein-coding
+32359	36714	DNA polymerase III subunit alpha	polC	protein-coding
+36977	38977	DUF237 domain-containing protein		protein-coding
+39127	39903	MIP/aquaporin family protein		protein-coding
+39872	40513	thymidine kinase		protein-coding
+40542	41786	histidine--tRNA ligase	hisS	protein-coding
+41758	43428	aspartate--tRNA ligase	aspS	protein-coding
+43404	44753	nicotinate phosphoribosyltransferase		protein-coding
+44750	46276	glycerol kinase GlpK	glpK	protein-coding
+46267	47421	type 2 glycerol-3-phosphate oxidase	glpO	protein-coding
+47580	49355	BMP family ABC transporter substrate-binding protein		protein-coding
+49376	49642	HPr family phosphocarrier protein		protein-coding
+49840	51519	ATP-binding cassette domain-containing protein		protein-coding
+51524	52381	ABC transporter permease		protein-coding
+52365	53219	ABC transporter permease		protein-coding
+53204	54655	hypothetical protein		protein-coding
+54657	55604	tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex transferase subunit TsaD	tsaD	protein-coding
+55588	56739	methionine adenosyltransferase	metK	protein-coding
+56715	56972	hypothetical protein		protein-coding
+56969	58309	signal recognition particle protein	ffh	protein-coding
+58362	59078	purine-nucleoside phosphorylase	deoD	protein-coding
+59082	59753	deoxyribose-phosphate aldolase	deoC	protein-coding
+59740	61005	thymidine phosphorylase		protein-coding
+61014	61406	cytidine deaminase	cdd	protein-coding
+61406	63058	phospho-sugar mutase		protein-coding
+63035	63985	transcription termination/antitermination protein NusG	nusG	protein-coding
+63989	64360	preprotein translocase subunit SecE	secE	protein-coding
+64367	64513	50S ribosomal protein L33	rpmG	protein-coding
+64527	64910	hypothetical protein		protein-coding
+64897	65730	16S rRNA (cytidine(1402)-2'-O)-methyltransferase	rsmI	protein-coding
+65712	66248	ribonuclease M5	rnmV	protein-coding
+66227	67225	ribose-phosphate diphosphokinase		protein-coding
+67206	67643	SsrA-binding protein	smpB	protein-coding
+67650	68543	glycosyltransferase family 2 protein		protein-coding
+68522	70225	hypothetical protein		protein-coding
+70393	70481	tRNA-Ser		tRNA
+70530	72572	fructose-specific PTS transporter subunit EIIC		protein-coding
+72523	73434	1-phosphofructokinase family hexose kinase		protein-coding
+73445	73648	hypothetical protein		protein-coding
+73690	77685	ABC transporter permease		protein-coding
+77685	79085	ABC transporter ATP-binding protein		protein-coding
+79089	81035	transketolase		protein-coding
+81085	82596	DUF31 family protein		protein-coding
+82620	84044	DUF31 family protein		protein-coding
+84082	84408	hypothetical protein		protein-coding
+84551	85555	hypothetical protein		protein-coding
+85589	85999	adhesin		protein-coding
+86134	86616	adhesin		protein-coding
+86827	87645	hypothetical protein		protein-coding
+87935	88207	hypothetical protein		protein-coding
+88228	90954	PTS transporter subunit IIABC		protein-coding
+91065	91919	30S ribosomal protein S2	rpsB	protein-coding
+91924	94548	cation-transporting P-type ATPase		protein-coding
+94535	96955	preprotein translocase subunit SecA	secA	protein-coding
+96933	98903	excinuclease ABC subunit UvrB	uvrB	protein-coding
+98906	99319	DUF5426 family protein		protein-coding
+99383	102457	P116 family lipid acquisition surface protein		protein-coding
+102454	102870	hypothetical protein		protein-coding
+103149	104327	ABC transporter permease		protein-coding
+104320	105450	ABC transporter permease		protein-coding
+105452	106660	ABC transporter ATP-binding protein		protein-coding
+106660	109206	ATP-binding cassette domain-containing protein		protein-coding
+109262	109675	50S ribosomal protein L11	rplK	protein-coding
+109675	110355	50S ribosomal protein L1	rplA	protein-coding
+110355	110924	aminoacyl-tRNA hydrolase	pth	protein-coding
+110917	111789	tRNA lysidine(34) synthetase TilS	tilS	protein-coding
+111790	112725	HPr(Ser) kinase/phosphatase	hprK	protein-coding
+112718	113866	prolipoprotein diacylglyceryl transferase	lgt	protein-coding
+113895	114314	30S ribosomal protein S12	rpsL	protein-coding
+114331	114798	30S ribosomal protein S7	rpsG	protein-coding
+114808	116874	elongation factor G	fusA	protein-coding
+116926	117552	30S ribosomal protein S6	rpsF	protein-coding
+117553	118035	single-stranded DNA-binding protein		protein-coding
+118028	118342	30S ribosomal protein S18	rpsR	protein-coding
+118345	118797	50S ribosomal protein L9	rplI	protein-coding
+118781	120187	replicative DNA helicase		protein-coding
+120191	121387	hypothetical protein		protein-coding
+121571	123523	DUF240 domain-containing protein		protein-coding
+123586	124317	uracil-DNA glycosylase	ung	protein-coding
+124417	125850	Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatC	gatC	protein-coding
+125853	127286	Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatA	gatA	protein-coding
+127279	128712	Asp-tRNA(Asn)/Glu-tRNA(Gln) amidotransferase subunit GatB	gatB	protein-coding
+128687	129355	GntR family transcriptional regulator		protein-coding
+129348	130295	thioredoxin-disulfide reductase	trxB	protein-coding
+130285	131127	DNA-binding protein WhiA	whiA	protein-coding
+131149	131382	preprotein translocase subunit SecG	secG	protein-coding
+131385	133562	ribonuclease R	rnr	protein-coding
+133570	134172	diadenylate cyclase CdaM	cdaM	protein-coding
+134147	134797	peptide deformylase	def	protein-coding
+134709	135338	guanylate kinase	gmk	protein-coding
+135338	136120	PP2C family serine/threonine-protein phosphatase		protein-coding
+136105	137268	serine/threonine-protein kinase		protein-coding
+137255	138091	ribosome small subunit-dependent GTPase A	rsgA	protein-coding
+138112	139407	glucose-6-phosphate isomerase		protein-coding
+139397	140026	ribulose-phosphate 3-epimerase		protein-coding
+140040	141410	asparagine--tRNA ligase	asnS	protein-coding
+141367	142056	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase	pgsA	protein-coding
+142081	142554	nicotinamide-nucleotide amidohydrolase family protein		protein-coding
+142563	143318	2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase		protein-coding
+143311	143955	hypothetical protein		protein-coding
+143936	144958	UDP-glucose 4-epimerase GalE	galE	protein-coding
+144973	146667	ABC transporter ATP-binding protein		protein-coding
+146674	148236	ABC transporter permease		protein-coding
+148239	149159	ABC transporter permease		protein-coding
+149199	151328	type I DNA topoisomerase	topA	protein-coding
+151306	152721	hypothetical protein		protein-coding
+152768	153076	thioredoxin	trxA	protein-coding
+153082	153939	Cof-type HAD-IIB family hydrolase		protein-coding
+153920	154963	tryptophan--tRNA ligase	trpS	protein-coding
+154999	155436	Spx/MgsR family RNA polymerase-binding regulatory protein		protein-coding
+155444	156223	NAD(+) kinase		protein-coding
+156223	156576	PTS sugar transporter subunit IIB		protein-coding
+156566	158020	ribonuclease Y		protein-coding
+158023	158309	uncharacterized gene		pseudogene
+158323	158604	hypothetical protein		protein-coding
+158581	159006	HIT family protein		protein-coding
+158984	159778	DUF1600 domain-containing protein		protein-coding
+159798	160100	YbaB/EbfC family nucleoid-associated protein		protein-coding
+160072	160914	DUF5378 family protein		protein-coding
+160963	162435	lysine--tRNA ligase	lysS	protein-coding
+162395	163591	UDP-galactopyranose mutase	glf	protein-coding
+163591	165387	translation elongation factor 4	lepA	protein-coding
+165471	167180	ribonuclease J		protein-coding
+167209	167613	adhesin		protein-coding
+167730	168230	adhesin		protein-coding
+168379	169800	uncharacterized gene		pseudogene
+170012	171529	16S ribosomal RNA		rRNA
+171729	174644	23S ribosomal RNA		rRNA
+174685	174793	5S ribosomal RNA	rrf	rRNA
+174977	175360	hypothetical protein		protein-coding
+175338	175667	MgpC family cytadherence protein		protein-coding
+175805	179146	AAA domain-containing protein		protein-coding
+179151	180746	transcription termination factor NusA	nusA	protein-coding
+180746	181018	YlxR family protein		protein-coding
+181005	182864	translation initiation factor IF-2	infB	protein-coding
+182851	183189	30S ribosome-binding factor RbfA	rbfA	protein-coding
+183214	184053	hypothetical protein		protein-coding
+184053	184862	riboflavin biosynthesis protein RibF	ribF	protein-coding
+184875	186149	hemolysin family protein		protein-coding
+186136	187263	hypothetical protein		protein-coding
+187302	188531	DUF2130 domain-containing protein		protein-coding
+188607	189452	hypothetical protein		protein-coding
+189492	189956	hypothetical protein		protein-coding
+190046	190366	30S ribosomal protein S10	rpsJ	protein-coding
+190370	191143	50S ribosomal protein L3	rplC	protein-coding
+191143	191778	50S ribosomal protein L4	rplD	protein-coding
+191782	192102	50S ribosomal protein L23		protein-coding
+192102	192959	50S ribosomal protein L2	rplB	protein-coding
+192959	193222	30S ribosomal protein S19	rpsS	protein-coding
+193225	193659	50S ribosomal protein L22	rplV	protein-coding
+193662	194468	30S ribosomal protein S3	rpsC	protein-coding
+194474	194890	50S ribosomal protein L16	rplP	protein-coding
+194890	195492	50S ribosomal protein L29	rpmC	protein-coding
+195492	195749	30S ribosomal protein S17	rpsQ	protein-coding
+195753	196121	50S ribosomal protein L14	rplN	protein-coding
+196121	196447	50S ribosomal protein L24	rplX	protein-coding
+196453	196995	50S ribosomal protein L5	rplE	protein-coding
+196998	197183	type Z 30S ribosomal protein S14		protein-coding
+197177	197602	30S ribosomal protein S8	rpsH	protein-coding
+197609	198163	50S ribosomal protein L6	rplF	protein-coding
+198165	198512	50S ribosomal protein L18	rplR	protein-coding
+198517	199152	30S ribosomal protein S5	rpsE	protein-coding
+199158	199610	50S ribosomal protein L15	rplO	protein-coding
+199610	201037	preprotein translocase subunit SecY	secY	protein-coding
+201031	201675	nucleoside monophosphate kinase		protein-coding
+201678	202424	type I methionyl aminopeptidase	map	protein-coding
+202424	202636	translation initiation factor IF-1	infA	protein-coding
+202647	202760	50S ribosomal protein L36	rpmJ	protein-coding
+202760	203134	30S ribosomal protein S13	rpsM	protein-coding
+203134	203499	30S ribosomal protein S11	rpsK	protein-coding
+203515	204501	DNA-directed RNA polymerase subunit alpha		protein-coding
+204514	204885	50S ribosomal protein L17	rplQ	protein-coding
+204872	205696	energy-coupling factor transporter ATPase		protein-coding
+205681	206595	energy-coupling factor transporter ATPase		protein-coding
+206588	207850	energy-coupling factor transporter transmembrane protein EcfT		protein-coding
+207843	208577	tRNA pseudouridine(38-40) synthase TruA	truA	protein-coding
+208567	210390	oligoendopeptidase F	pepF	protein-coding
+210391	211344	adenine-specific methyltransferase EcoRI family protein		protein-coding
+211444	213549	P80 family lipoprotein		protein-coding
+213555	214532	uncharacterized gene		pseudogene
+214828	215529	hypothetical protein		protein-coding
+215501	215881	MgpC family cytadherence protein		protein-coding
+216016	216768	thermonuclease family protein		protein-coding
+216761	218518	ATP-binding cassette domain-containing protein		protein-coding
+218521	219510	sugar ABC transporter permease		protein-coding
+219482	220438	carbohydrate ABC transporter permease		protein-coding
+220440	220598	hypothetical protein		protein-coding
+220607	221563	bifunctional oligoribonuclease/PAP phosphatase NrnA		protein-coding
+221570	225904	adhesin P1	mgpA	protein-coding
+225915	229067	adhesin P110		protein-coding
+229168	229335	hypothetical protein		protein-coding
+229461	229868	hypothetical protein		protein-coding
+229988	230482	adhesin		protein-coding
+230651	231370	hypothetical protein		protein-coding
+231297	231572	adhesin		protein-coding
+231521	231673	uncharacterized gene		pseudogene
+232009	233034	phenylalanine--tRNA ligase subunit alpha	pheS	protein-coding
+233038	235458	phenylalanine--tRNA ligase subunit beta	pheT	protein-coding
+235517	236062	translation initiation factor IF-3	infC	protein-coding
+236065	236244	50S ribosomal protein L35	rpmI	protein-coding
+236247	236621	50S ribosomal protein L20	rplT	protein-coding
+236593	237300	ribonuclease HIII		protein-coding
+237347	237727	uncharacterized gene		pseudogene
+237773	239152	EAGR box-containing protein		protein-coding
+239164	239817	nucleotide exchange factor GrpE		protein-coding
+239827	240195	hypothetical protein		protein-coding
+240213	240286	tRNA-Thr		tRNA
+240323	242224	DNA topoisomerase IV subunit B	parE	protein-coding
+242224	244569	DNA topoisomerase IV subunit A	parC	protein-coding
+244566	245597	heat-inducible transcriptional repressor HrcA	hrcA	protein-coding
+245633	247426	excinuclease ABC subunit UvrC	uvrC	protein-coding
+247419	247910	metallophosphoesterase		protein-coding
+247903	248493	tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex dimerization subunit type 1 TsaB	tsaB	protein-coding
+248477	249403	RluA family pseudouridine synthase		protein-coding
+249403	249948	signal peptidase II	lspA	protein-coding
+250149	250808	DUF5454 family protein		protein-coding
+250808	250996	30S ribosomal protein S21	rpsU	protein-coding
+250998	251441	DivIVA domain-containing protein		protein-coding
+251444	251788	holo-ACP synthase		protein-coding
+251781	252587	1-acyl-sn-glycerol-3-phosphate acyltransferase		protein-coding
+252580	253995	segregation/condensation protein A	scpA	protein-coding
+253979	254602	SMC-Scp complex subunit ScpB	scpB	protein-coding
+254621	255592	ATP-dependent 6-phosphofructokinase		protein-coding
+255595	257121	pyruvate kinase	pyk	protein-coding
+257158	257234	tRNA-Cys		tRNA
+257269	257345	tRNA-Pro		tRNA
+257349	257425	tRNA-Met		tRNA
+257445	257521	tRNA-Ile		tRNA
+257559	257650	tRNA-Ser		tRNA
+257664	257740	tRNA-Met		tRNA
+257742	257815	tRNA-Asp		tRNA
+257818	257893	tRNA-Phe		tRNA
+258041	259159	cytadherence-associated protein P65		protein-coding
+259177	264594	terminal organelle tip protein HMW2	hmw2	protein-coding
+264597	265637	hypothetical protein		protein-coding
+265630	266043	hypothetical protein		protein-coding
+266075	266356	hypothetical protein		protein-coding
+266423	266499	tRNA-Arg		tRNA
+266666	267091	division/cell wall cluster transcriptional repressor MraZ	mraZ	protein-coding
+267081	268010	16S rRNA (cytosine(1402)-N(4))-methyltransferase RsmH	rsmH	protein-coding
+268012	269247	hypothetical protein		protein-coding
+269250	270359	cell division protein FtsZ	ftsZ	protein-coding
+270405	271874	APC family permease		protein-coding
+271840	273318	APC family permease		protein-coding
+273298	273462	hypothetical protein		protein-coding
+273455	273745	adhesin		protein-coding
+273790	274653	thymidylate synthase		protein-coding
+274653	275135	dihydrofolate reductase		protein-coding
+275141	276163	class 1b ribonucleoside-diphosphate reductase subunit beta	nrdF	protein-coding
+276167	276628	class Ib ribonucleoside-diphosphate reductase assembly flavoprotein NrdI	nrdI	protein-coding
+276647	278812	class 1b ribonucleoside-diphosphate reductase subunit alpha	nrdE	protein-coding
+278905	279207	50S ribosomal protein L21	rplU	protein-coding
+279200	279499	ribosomal-processing cysteine protease Prp		protein-coding
+279492	279806	50S ribosomal protein L27	rpmA	protein-coding
+279799	280674	deoxyribonuclease IV		protein-coding
+280664	281086	Fur family transcriptional regulator		protein-coding
+281079	281963	DUF3196 family protein		protein-coding
+281993	283327	trigger factor	tig	protein-coding
+283396	285783	endopeptidase La	lon	protein-coding
+285780	286832	nicotinate-nucleotide adenylyltransferase		protein-coding
+286885	288747	hypothetical protein		protein-coding
+288753	290645	hypothetical protein		protein-coding
+290648	291328	RDD family protein		protein-coding
+291334	293445	ATP-dependent helicase		protein-coding
+293448	293945	5-formyltetrahydrofolate cyclo-ligase		protein-coding
+293938	294783	TIGR00282 family metallophosphoesterase		protein-coding
+294767	295486	glycerol-3-phosphate 1-O-acyltransferase PlsY	plsY	protein-coding
+295473	296129	tRNA (adenine(22)-N(1))-methyltransferase TrmK		protein-coding
+296113	297606	RNA polymerase sigma factor		protein-coding
+297651	299474	DNA primase	dnaG	protein-coding
+299464	300804	glycine--tRNA ligase	glyS	protein-coding
+300824	301552	23S rRNA (guanosine(2251)-2'-O)-methyltransferase RlmB	rlmB	protein-coding
+301555	302865	cysteine--tRNA ligase	cysS	protein-coding
+302846	304822	NAD-dependent DNA ligase LigA	ligA	protein-coding
+304892	304965	tRNA-Gly		tRNA
+305001	306098	hypothetical protein		protein-coding
+306617	306691	tRNA-Arg		tRNA
+306740	306813	tRNA-Trp		tRNA
+306821	307591	hypothetical protein		protein-coding
+307637	307930	50S ribosomal protein L31	rpmE	protein-coding
+307930	309009	peptide chain release factor 1	prfA	protein-coding
+309010	310380	methyltransferase		protein-coding
+310511	312808	P80 family lipoprotein		protein-coding
+312846	313250	adhesin		protein-coding
+313367	313879	adhesin		protein-coding
+314225	315232	MgpC family cytadherence protein		protein-coding
+315301	315377	tRNA-Arg		tRNA
+315467	315697	hypothetical protein		protein-coding
+315701	318325	DNA polymerase III subunit alpha		protein-coding
+318332	319207	5'-3' exonuclease		protein-coding
+319207	320061	DNA-formamidopyrimidine glycosylase	mutM	protein-coding
+320177	321052	Cof-type HAD-IIB family hydrolase		protein-coding
+321046	321642	dephospho-CoA kinase	coaE	protein-coding
+321578	322414	Cof-type HAD-IIB family hydrolase		protein-coding
+322433	324811	leucine--tRNA ligase	leuS	protein-coding
+324812	325159	hypothetical protein		protein-coding
+325193	325879	deoxynucleoside kinase		protein-coding
+325915	326010	signal recognition particle sRNA small type	ffs	other
+326030	327052	hypothetical protein		protein-coding
+327045	327431	hypothetical protein		protein-coding
+327433	328443	lipoate--protein ligase		protein-coding
+328454	329827	dihydrolipoyl dehydrogenase	lpdA	protein-coding
+329831	330985	dihydrolipoamide acetyltransferase family protein		protein-coding
+331235	332215	alpha-ketoacid dehydrogenase subunit beta		protein-coding
+332233	333309	pyruvate dehydrogenase (acetyl-transferring) E1 component subunit alpha	pdhA	protein-coding
+333337	334773	FAD-dependent oxidoreductase		protein-coding
+334856	335398	adenine phosphoribosyltransferase	apt	protein-coding
+335412	338324	hypothetical protein		protein-coding
+338367	340529	RelA/SpoT family protein		protein-coding
+340526	341182	MG_279/MG_280 family protein		protein-coding
+341175	341972	MG_279/MG_280 family protein		protein-coding
+342033	343703	IgG-blocking protein M		protein-coding
+343884	343957	tRNA-Gly		tRNA
+343965	344050	tRNA-Leu		tRNA
+344051	344125	tRNA-Lys		tRNA
+344172	344246	tRNA-Gln		tRNA
+344251	344337	tRNA-Tyr		tRNA
+344365	344850	transcription elongation factor GreA	greA	protein-coding
+345031	345165	hypothetical protein		protein-coding
+345182	346633	proline--tRNA ligase	proS	protein-coding
+346854	347252	hypothetical protein		protein-coding
+347215	348258	DUF5443 family protein		protein-coding
+348261	348851	DUF5452 family protein		protein-coding
+348883	349137	phosphopantetheine-binding protein		protein-coding
+349128	349202	tRNA-Trp		tRNA
+349282	349677	adhesin		protein-coding
+349797	350327	adhesin		protein-coding
+350425	351780	uncharacterized gene		pseudogene
+351791	353035	DUF237 domain-containing protein		protein-coding
+353299	353682	hypothetical protein		protein-coding
+354024	355130	high affinity transport system protein p37		protein-coding
+355120	355857	ABC transporter ATP-binding protein		protein-coding
+355847	357478	ABC transporter permease		protein-coding
+357475	357891	Holliday junction resolvase RuvX	ruvX	protein-coding
+357891	360593	alanine--tRNA ligase	alaS	protein-coding
+360651	361385	glycerophosphodiester phosphodiesterase		protein-coding
+361378	362796	MFS transporter		protein-coding
+362920	364017	tRNA 2-thiouridine(34) synthase MnmA	mnmA	protein-coding
+364026	364415	MG296/MPN423 family protein		protein-coding
+364535	365575	signal recognition particle-docking protein FtsY	ftsY	protein-coding
+365582	368530	chromosome segregation protein SMC		protein-coding
+368733	369695	phosphate acetyltransferase	pta	protein-coding
+369713	370948	phosphoglycerate kinase	pgk	protein-coding
+370950	371963	type I glyceraldehyde-3-phosphate dehydrogenase	gap	protein-coding
+371994	372947	energy-coupling factor transporter transmembrane protein EcfT		protein-coding
+372926	373999	energy-coupling factor ABC transporter ATP-binding protein		protein-coding
+373981	374793	energy-coupling factor ABC transporter ATP-binding protein		protein-coding
+374919	376706	molecular chaperone DnaK	dnaK	protein-coding
+376794	377975	YbhN family protein		protein-coding
+377975	381508	DUF3713 domain-containing protein		protein-coding
+381493	382725	DEAD/DEAH box helicase		protein-coding
+382732	386409	DUF3713 domain-containing protein		protein-coding
+386463	387269	alpha/beta hydrolase		protein-coding
+387276	387893	30S ribosomal protein S4	rpsD	protein-coding
+387916	391335	terminal organelle protein HMW1	hmw1	protein-coding
+391395	392258	ECF transporter S component		protein-coding
+392303	393634	hypothetical protein		protein-coding
+393658	394551	DNA polymerase III subunit delta		protein-coding
+394475	395584	ComEC/Rec2 family competence protein		protein-coding
+395625	397424	terminal organelle protein HMW3	hmw3	protein-coding
+397439	398281	adhesin P32		protein-coding
+398298	398834	hypothetical protein		protein-coding
+398938	399798	hypothetical protein		protein-coding
+399868	399958	tRNA-Ser		tRNA
+399960	400048	tRNA-Ser		tRNA
+400119	402923	MG321/MPN456 family lipoprotein		protein-coding
+403134	403218	tRNA-Leu		tRNA
+403224	403299	tRNA-Lys		tRNA
+403306	403381	tRNA-Thr		tRNA
+403383	403458	tRNA-Val		tRNA
+403467	403541	tRNA-Thr		tRNA
+403544	403620	tRNA-Glu		tRNA
+403627	403701	tRNA-Asn		tRNA
+403723	405420	potassium transporter TrkG		protein-coding
+405456	406139	TrkA family potassium uptake protein		protein-coding
+406179	406519	RNase P RNA component class B	rnpB	RNase_P_RNA
+406542	406929	transfer-messenger RNA	ssrA	other
+406975	407784	hypothetical protein		protein-coding
+407729	408793	aminopeptidase P family protein		protein-coding
+408793	408954	50S ribosomal protein L33	rpmG	protein-coding
+408971	409858	DegV family protein		protein-coding
+409871	410677	alpha/beta hydrolase		protein-coding
+410664	412934	hypothetical protein		protein-coding
+412973	414319	ribosome biogenesis GTPase Der	der	protein-coding
+414323	414976	(d)CMP kinase	cmk	protein-coding
+414985	415623	hypothetical protein		protein-coding
+415611	416330	YebC/PmpR family DNA-binding transcriptional regulator		protein-coding
+416337	416930	FMN-dependent NADH-azoreductase		protein-coding
+416967	419480	valine--tRNA ligase	valS	protein-coding
+419470	420045	ribosome biogenesis GTP-binding protein YihA/YsxC	yihA	protein-coding
+420053	420274	YneF family protein		protein-coding
+420333	421358	glycosyltransferase family 2 protein		protein-coding
+421467	422693	aminotransferase class V-fold PLP-dependent enzyme		protein-coding
+422697	423113	iron-sulfur cluster assembly scaffold protein		protein-coding
+423100	426912	DUF3713 domain-containing protein		protein-coding
+427090	428112	recombinase RecA	recA	protein-coding
+428307	429611	uncharacterized gene		pseudogene
+429607	430116	hypothetical protein		protein-coding
+430098	430583	adhesin		protein-coding
+430580	434458	DNA-directed RNA polymerase subunit beta'	rpoC	protein-coding
+434468	438640	DNA-directed RNA polymerase subunit beta		protein-coding
+438730	439236	NADPH-dependent FMN reductase		protein-coding
+439315	440355	hypothetical protein		protein-coding
+440359	441180	alpha/beta hydrolase		protein-coding
+441191	443878	isoleucine--tRNA ligase	ileS	protein-coding
+443922	444422	tRNA (uridine(34)/cytosine(34)/5-carboxymethylaminomethyluridine(34)-2'-O)-methyltransferase TrmL	trmL	protein-coding
+444413	445045	tRNA (guanosine(46)-N7)-methyltransferase TrmB	trmB	protein-coding
+445078	445153	tRNA-His		tRNA
+445197	446165	hypothetical protein		protein-coding
+446178	446265	tRNA-Leu		tRNA
+446618	447790	replication initiation and membrane attachment family protein		protein-coding
+447790	448725	hypothetical protein		protein-coding
+448783	448864	tRNA-Leu		tRNA
+448943	449617	hypothetical protein		protein-coding
+449665	450219	inorganic diphosphatase		protein-coding
+450222	450722	Holliday junction resolvase RecU	recU	protein-coding
+450719	451048	HU family DNA-binding protein		protein-coding
+451197	451610	DUF1951 domain-containing protein		protein-coding
+451613	453757	AAA family ATPase		protein-coding
+453911	454753	phosphotransferase family protein		protein-coding
+454766	455947	acetate/propionate family kinase		protein-coding
+456055	456264	hypothetical protein		protein-coding
+456327	456752	hypothetical protein		protein-coding
+456755	457372	Holliday junction branch migration protein RuvA	ruvA	protein-coding
+457347	458270	Holliday junction branch migration DNA helicase RuvB	ruvB	protein-coding
+458260	459495	DNA polymerase IV		protein-coding
+459615	460103	50S ribosomal protein L10	rplJ	protein-coding
+460126	460494	50S ribosomal protein L7/L12	rplL	protein-coding
+460497	460670	50S ribosomal protein L32	rpmF	protein-coding
+460685	460951	30S ribosomal protein S20	rpsT	protein-coding
+461015	461689	DUF5385 family protein		protein-coding
+461682	462617	methionyl-tRNA formyltransferase	fmt	protein-coding
+462619	464622	DUF2779 domain-containing protein		protein-coding
+464600	465434	uncharacterized gene	rnc	pseudogene
+465424	466410	phosphate acyltransferase PlsX	plsX	protein-coding
+466410	468083	DAK2 domain-containing protein		protein-coding
+468152	469123	RNA pseudouridine synthase		protein-coding
+469110	470084	bifunctional oligoribonuclease/PAP phosphatase NrnA		protein-coding
+470077	471234	tRNA uracil 4-sulfurtransferase ThiI	thiI	protein-coding
+471221	472066	YqaJ viral recombinase family protein		protein-coding
+472067	472891	HAD hydrolase family protein		protein-coding
+472884	474578	threonine--tRNA ligase	thrS	protein-coding
+474578	474892	DUF3217 domain-containing protein		protein-coding
+474898	475479	hypothetical protein		protein-coding
+475526	477139	arginine--tRNA ligase	argS	protein-coding
+477168	479006	tRNA uridine-5-carboxymethylaminomethyl(34) synthesis enzyme MnmG	mnmG	protein-coding
+478999	479577	16S rRNA (guanine(527)-N(7))-methyltransferase RsmG	rsmG	protein-coding
+479570	480226	hypothetical protein		protein-coding
+480240	480315	tRNA-Arg		tRNA
+480691	481332	uridine kinase	udk	protein-coding
+481329	482075	NAD(+) synthase	nadE	protein-coding
+482068	483369	GTPase ObgE	obgE	protein-coding
+483369	483986	hypothetical protein		protein-coding
+483989	484699	glycerophosphodiester phosphodiesterase		protein-coding
+484702	489552	terminal organelle protein P200		protein-coding
+489839	490711	GTPase Era	era	protein-coding
+490699	491163	rRNA maturation RNase YbeY	ybeY	protein-coding
+491147	491530	hypothetical protein		protein-coding
+491534	493516	peptidase domain-containing ABC transporter		protein-coding
+493624	494967	leucyl aminopeptidase		protein-coding
+494984	496615	chaperonin GroEL	groL	protein-coding
+496628	496960	co-chaperone GroES	groES	protein-coding
+497086	498306	serine hydroxymethyltransferase	glyA	protein-coding
+498316	499890	DUF31 family protein		protein-coding
+499999	500280	hypothetical protein		protein-coding
+500261	500719	ribose 5-phosphate isomerase B	rpiB	protein-coding
+500720	502420	septation ring formation regulator EzrA		protein-coding
+502422	502823	F0F1 ATP synthase subunit epsilon		protein-coding
+502828	504255	F0F1 ATP synthase subunit beta	atpD	protein-coding
+504260	505099	ATP synthase F1 subunit gamma	atpG	protein-coding
+505099	506655	F0F1 ATP synthase subunit alpha	atpA	protein-coding
+506671	507201	ATP synthase F1 subunit delta	atpH	protein-coding
+507194	507820	F0F1 ATP synthase subunit B	atpF	protein-coding
+507823	508131	F0F1 ATP synthase subunit C		protein-coding
+508134	509012	F0F1 ATP synthase subunit A		protein-coding
+508978	509454	MG406 family protein		protein-coding
+509460	510836	phosphopyruvate hydratase	eno	protein-coding
+510903	511376	peptide-methionine (S)-S-oxide reductase MsrA	msrA	protein-coding
+511373	512050	phosphate signaling complex protein PhoU	phoU	protein-coding
+512053	513042	phosphate ABC transporter ATP-binding protein PstB	pstB	protein-coding
+513027	514991	phosphate ABC transporter permease PstA	pstA	protein-coding
+514991	516124	PstS family phosphate ABC transporter substrate-binding protein		protein-coding
+516245	519355	hypothetical protein		protein-coding
+519420	521414	hypothetical protein		protein-coding
+521470	521868	30S ribosomal protein S9	rpsI	protein-coding
+521874	522314	50S ribosomal protein L13	rplM	protein-coding
+522352	524145	DNA polymerase III subunit gamma/tau	dnaX	protein-coding
+524151	527009	excinuclease ABC subunit UvrA	uvrA	protein-coding
+526987	529494	hypothetical protein		protein-coding
+529532	531217	RNase J family beta-CASP ribonuclease		protein-coding
+531220	531480	30S ribosomal protein S15	rpsO	protein-coding
+531669	533018	DEAD/DEAH box helicase		protein-coding
+533041	533235	50S ribosomal protein L28	rpmB	protein-coding
+533271	533696	hydroperoxide reductase		protein-coding
+533807	534322	sigma-70 family RNA polymerase sigma factor		protein-coding
+534319	536037	phosphoenolpyruvate--protein phosphotransferase	ptsP	protein-coding
+536041	537564	2,3-bisphosphoglycerate-independent phosphoglycerate mutase	gpmI	protein-coding
+537557	538291	triose-phosphate isomerase	tpiA	protein-coding
+538351	539547	YitT family protein		protein-coding
+539633	540529	translation elongation factor Ts	tsf	protein-coding
+540510	541241	UMP kinase	pyrH	protein-coding
+541241	541792	ribosome recycling factor	frr	protein-coding
+541793	542986	phosphatidate cytidylyltransferase		protein-coding
+543006	544157	restriction endonuclease subunit S		protein-coding
+544562	545380	MPN647 family lipoprotein		protein-coding
+545380	546156	MPN647 family lipoprotein		protein-coding
+546299	546709	DUF5426 family protein		protein-coding
+546880	547647	ribosome biogenesis GTPase YlqF	ylqF	protein-coding
+547664	548851	YitT family protein		protein-coding
+548867	549226	50S ribosomal protein L19	rplS	protein-coding
+549210	549905	tRNA (guanosine(37)-N1)-methyltransferase TrmD	trmD	protein-coding
+549905	550192	30S ribosomal protein S16	rpsP	protein-coding
+550803	552446	MATE family efflux transporter		protein-coding
+552447	552899	peptide-methionine (R)-S-oxide reductase MsrB	msrB	protein-coding
+552863	553548	uncharacterized gene		pseudogene
+553558	554430	DegV family protein		protein-coding
+554430	555614	elongation factor Tu	tuf	protein-coding
+555697	556452	DUF1600 domain-containing protein		protein-coding
+556437	557315	UTP--glucose-1-phosphate uridylyltransferase GalU	galU	protein-coding
+557305	557727	OsmC family protein		protein-coding
+557759	558949	tyrosine--tRNA ligase	tyrS	protein-coding
+558939	559943	hypothetical protein		protein-coding
+559931	560512	hypothetical protein		protein-coding
+560496	562604	ATP-dependent zinc metalloprotease FtsH	ftsH	protein-coding
+562782	563309	hypoxanthine phosphoribosyltransferase	hpt	protein-coding
+563311	563820	2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase		protein-coding
+563993	564931	L-lactate dehydrogenase		protein-coding
+564928	566205	HD domain-containing protein		protein-coding
+566186	567640	glutamate--tRNA ligase	gltX	protein-coding
+567627	568406	16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase RsmA	rsmA	protein-coding
+568399	569556	membrane protein insertase YidC	yidC	protein-coding
+569528	569893	ribonuclease P protein component	rnpA	protein-coding
+569883	570029	50S ribosomal protein L34	rpmH	protein-coding
+570055	570990	ABC transporter ATP-binding protein		protein-coding
+570994	576345	ABC transporter permease		protein-coding
+576351	577205	ABC transporter ATP-binding protein		protein-coding
+577268	578581	chromosomal replication initiator protein DnaA	dnaA	protein-coding
+578581	579234	hypothetical protein		protein-coding
+579224	580033	ParA family protein		protein-coding

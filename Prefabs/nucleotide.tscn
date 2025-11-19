@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3 uid="uid://b2ebamsgwev5m"]
+
+[ext_resource type="Script" path="res://Prefabs/nucleotide.gd" id="1_wgm3j"]
+[ext_resource type="Texture2D" uid="uid://b4idah8qsuc70" path="res://Graphics/backbone.png" id="2_gamqd"]
+[ext_resource type="Texture2D" uid="uid://cvdmuxn71d0ns" path="res://Graphics/adenine.png" id="3_8liso"]
+[ext_resource type="Texture2D" uid="uid://duvp53gh5eo2l" path="res://Graphics/cytosine.png" id="4_7rxv6"]
+[ext_resource type="Texture2D" uid="uid://gpttsxlumgh3" path="res://Graphics/guanine.png" id="5_4dqim"]
+[ext_resource type="Texture2D" uid="uid://2wrixv5521kh" path="res://Graphics/thymine.png" id="6_ksxbe"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mxxph"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_8liso")
+}],
+"loop": true,
+"name": &"A",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_7rxv6")
+}],
+"loop": true,
+"name": &"C",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_4dqim")
+}],
+"loop": true,
+"name": &"G",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_ksxbe")
+}],
+"loop": true,
+"name": &"T",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"X",
+"speed": 5.0
+}]
+
+[node name="nucleotide" type="Control"]
+custom_minimum_size = Vector2(811, 1000)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wgm3j")
+
+[node name="sugarphosphate" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_gamqd")
+
+[node name="base" type="AnimatedSprite2D" parent="."]
+position = Vector2(296, 617)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_mxxph")
+animation = &"T"
