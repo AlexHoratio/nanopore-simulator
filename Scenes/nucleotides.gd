@@ -100,6 +100,7 @@ func enter_nucleotide(base: String) -> void:
 		explosion_effect.base = current_base.nucleotide_type
 		get_node("../fx").add_child(explosion_effect)
 		
+		get_node("../header/combo").add_to_combo()
 		
 	else:
 		current_base.modulate = Color.RED

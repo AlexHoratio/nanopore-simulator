@@ -1,10 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://cr61c0cfr32mm"]
+[gd_scene load_steps=11 format=3 uid="uid://cr61c0cfr32mm"]
 
 [ext_resource type="Script" uid="uid://dwfm8krm03a2b" path="res://Scenes/nucleotides.gd" id="1_u0m5t"]
 [ext_resource type="Script" uid="uid://vuf8raj15uxv" path="res://Scenes/buttons.gd" id="2_c065l"]
 [ext_resource type="Script" uid="uid://v73wk0yg11kc" path="res://Scenes/gene_annotation.gd" id="3_e7j1d"]
 [ext_resource type="Script" uid="uid://dqboln7c00bnu" path="res://Scenes/stars.gd" id="4_ilgaw"]
-[ext_resource type="PackedScene" uid="uid://cyc1hsfx01ivf" path="res://Prefabs/round_9_patch.tscn" id="5_hdjji"]
+[ext_resource type="Texture2D" uid="uid://b1lbviafddocs" path="res://Graphics/icons/back_rotated.png" id="5_hdjji"]
+[ext_resource type="Texture2D" uid="uid://y5kxh15g7g8p" path="res://Graphics/ThinBar/over.png" id="6_d6cjv"]
+[ext_resource type="Script" uid="uid://dhhyt37buuggg" path="res://Scenes/combo.gd" id="6_u8tok"]
+[ext_resource type="Texture2D" uid="uid://c1dqly2kvdbua" path="res://Graphics/ThinBar/prog.png" id="7_u8tok"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_uwjfp"]
 font_size = 32
@@ -12,7 +15,12 @@ outline_size = 16
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_hdjji"]
-font_size = 32
+font_size = 80
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 8
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(-6, 4)
 
 [node name="new_game" type="Control"]
 layout_mode = 3
@@ -114,19 +122,19 @@ metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="gene_annotation"]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
+anchor_top = 0.82900006
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.82900006
 offset_left = 19.0
-offset_top = 105.0
+offset_top = -143.07202
 offset_right = -18.0
-offset_bottom = -92.0
+offset_bottom = -0.072021484
 grow_horizontal = 2
 grow_vertical = 2
 text = "ditrans,polycis-undecaprenyl-diphosphate synthase [(2E,6E)-farnesyl-diphosphate specific]"
 label_settings = SubResource("LabelSettings_uwjfp")
 horizontal_alignment = 1
-vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="progress" type="ProgressBar" parent="gene_annotation"]
@@ -181,56 +189,85 @@ script = ExtResource("4_ilgaw")
 
 [node name="header" type="Control" parent="."]
 layout_mode = 1
-anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 98.0
+anchor_bottom = 0.120000005
+offset_bottom = -0.6000061
 grow_horizontal = 2
 
-[node name="back" parent="header" instance=ExtResource("5_hdjji")]
+[node name="back" type="Control" parent="header"]
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.5
-anchor_bottom = 0.0
-offset_left = 32.0
-offset_top = 40.0
-offset_right = -15.0
-offset_bottom = 104.0
-grow_horizontal = 1
+anchor_left = 0.03888889
+anchor_top = 0.36734694
+anchor_right = 0.22222222
+anchor_bottom = 0.96732026
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="header/back"]
+[node name="TextureRect" type="TextureRect" parent="header/back"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Microbe Selector"
-label_settings = SubResource("LabelSettings_hdjji")
-horizontal_alignment = 1
-vertical_alignment = 1
+texture = ExtResource("5_hdjji")
+stretch_mode = 3
 
-[node name="genes" parent="header" instance=ExtResource("5_hdjji")]
+[node name="Button" type="Button" parent="header/back"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+anchor_left = -0.152
+anchor_top = -0.23809524
+anchor_right = 1.216
+anchor_bottom = 1.2023809
+metadata/_edit_use_anchors_ = true
+
+[node name="combo" type="Control" parent="header"]
+layout_mode = 1
+anchor_left = 0.25800002
+anchor_top = 0.36601308
+anchor_right = 0.9638889
+anchor_bottom = 0.96700007
+offset_left = 0.23999023
+offset_bottom = 0.04899597
+script = ExtResource("6_u8tok")
+
+[node name="read_length" type="Label" parent="header/combo"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_bottom = 0.0
-offset_left = 15.0
-offset_top = 40.0
-offset_right = -32.0
-offset_bottom = 104.0
+anchor_top = -0.097826086
+anchor_right = 1.0334646
+anchor_bottom = 1.0978261
+offset_top = 9.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "0 b.p."
+label_settings = SubResource("LabelSettings_hdjji")
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="time_bar" type="TextureProgressBar" parent="header/combo"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -34.0
 grow_horizontal = 0
-
-[node name="Label" type="Label" parent="header/genes"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
 grow_vertical = 2
-text = "Gene Catalogue"
-label_settings = SubResource("LabelSettings_hdjji")
-horizontal_alignment = 1
-vertical_alignment = 1
+step = 0.01
+value = 50.0
+fill_mode = 3
+nine_patch_stretch = true
+stretch_margin_left = 2
+stretch_margin_top = 2
+stretch_margin_right = 2
+stretch_margin_bottom = 2
+texture_under = ExtResource("6_d6cjv")
+texture_progress = ExtResource("7_u8tok")
+tint_progress = Color(0.9665192, 0.45362037, 0, 1)
 
 [connection signal="pressed" from="buttons/GridContainer/a" to="buttons" method="_on_a_pressed"]
 [connection signal="pressed" from="buttons/GridContainer/t" to="buttons" method="_on_t_pressed"]

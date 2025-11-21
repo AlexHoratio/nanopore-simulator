@@ -21,7 +21,7 @@ func _ready():
 	calculate_annotation()
 	
 func _process(delta):
-	print(current_place)
+	pass
 	
 func load_progress() -> void:
 	save_data.load("user://save_data.cfg")
